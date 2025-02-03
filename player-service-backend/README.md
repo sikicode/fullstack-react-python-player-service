@@ -80,7 +80,7 @@ Player service integrates with Ollama 🦙, which allows us to run LLMs locally.
     curl -v --location 'http://localhost:11434/api/generate' --header 'Content-Type: application/json' --data '{"model": "tinyllama","prompt": "why is the sky blue?", "stream": false}'
     ```
 
-Having trouble with docker? Try using podman as an alternative. Instructions [here](https://github.com/Intuit-A4A/frontend-page-prism/wiki/Supplemental-Materials:-Set-up-help).
+Having trouble with docker? Try using podman as an alternative. Instructions [here](https://github.com/Intuit-A4A/fullstack-react-python-player-service/wiki/Supplemental-Materials:-Set-up-help).
 
 
 ### Part 4: Verify Player Service and LLM Integration
