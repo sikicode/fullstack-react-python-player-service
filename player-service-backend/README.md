@@ -6,7 +6,7 @@ Player Service is a backend application that serves baseball player data. In add
 
 - Python3.9+
 - sqllite3
-- Docker
+- [Docker](https://www.docker.com/) or [Podman](https://podman.io/)
 - [Ollama Python SDK](https://github.com/ollama/ollama-python)
 
 ## 🛠️ Setup Instructions
