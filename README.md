@@ -16,7 +16,7 @@ Player Service App
 - Python 3
 - Flask
 - sqllite3
-- [Docker](https://www.docker.com/)
+- [Docker](https://www.docker.com/) or Podman (https://podman.io/)
 - [Ollama Python SDK](https://github.com/ollama/ollama-python)
 
 ## Frontend
