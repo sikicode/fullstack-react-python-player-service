@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import {validateId, validateCountryCode, santifizeInput} from "../utils";
+import {validateId, validateCountryCode, sanitizeInput} from "../utils";
 import useDatatFetcher from "../utils/DataFetcher";
 import fetchData from "../utils/DataFetcher";
 

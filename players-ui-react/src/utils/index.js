@@ -6,6 +6,6 @@ export const validateCountryCode = (value) => {
     return true;
 }
 
-export const santifizeInput =  (value) => {
+export const sanitizeInput =  (value) => {
     return value;
 }
