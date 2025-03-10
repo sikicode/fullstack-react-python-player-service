@@ -29,3 +29,25 @@ class PlayerService:
 
         return response
 
+    def search_by_country(self, country):
+        query = "SELECT * FROM players WHERE birthCountry='{}'".format(country)
+        players = self.cursor.execute(query).fetchall()
+        columns = [column[0] for column in self.cursor.description]
+        response = []
+
+        for player in players:
+            response.append(dict(zip(columns,player)))
+
+        return response
+
+    def search_by_name(self, name):
+        query = "SELECT * FROM players WHERE nameFirst LIKE '%{}%' OR nameLast LIKE '%{}%'".format(name, name)
+        players = self.cursor.execute(query).fetchall()
+        columns = [column[0] for column in self.cursor.description]
+        response = []
+
+        for player in players:
+            response.append(dict(zip(columns,player)))
+
+        return response
+

@@ -153,6 +153,8 @@ class LLMFeedbackOutput(BaseModel):
     system_prompt: Optional[str]
     user_prompt: str
 
+import requests
+
 @app.route('/llm/generate', methods=['POST'])
 @validate
 def generate_description(body: LLMInput) -> LLMOutput:
